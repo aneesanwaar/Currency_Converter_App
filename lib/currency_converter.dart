@@ -7,7 +7,7 @@ class CurrencyConverter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         title: Text("Currency Converter"),
         backgroundColor: Colors.blueGrey,
@@ -18,10 +18,21 @@ class CurrencyConverter extends StatelessWidget {
           children: [Text("0", style: TextStyle(
             fontSize: 55,
             fontWeight: FontWeight.bold,
-            color: Colors.white),),
-            ],
-        ),
-      ),
-    );
+            color: Colors.white ),),
+            TextField(
+              style: TextStyle(
+                color: Colors.white
+              ),
+              decoration: InputDecoration(
+                hintText:  "Enter PKR to convert in USD",
+
+                ),
+                )]
+              ),
+            )
+    
+        );
+
+
   }
 }
