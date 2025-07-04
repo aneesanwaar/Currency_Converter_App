@@ -7,6 +7,7 @@ class CurrencyConverter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text("Currency Converter"),
         backgroundColor: Colors.blueGrey,
@@ -14,8 +15,10 @@ class CurrencyConverter extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text("Hello", style: TextStyle(
-            fontWeight: FontWeight.bold),),
+          children: [Text("0", style: TextStyle(
+            fontSize: 55,
+            fontWeight: FontWeight.bold,
+            color: Colors.white),),
             ],
         ),
       ),
