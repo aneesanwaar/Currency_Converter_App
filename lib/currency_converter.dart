@@ -24,16 +24,22 @@ class CurrencyConverter extends StatelessWidget {
               ),
             ),
             TextField(
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.black),
               decoration: InputDecoration(
-                hintText: "Enter PKR to convert in USD",
-                hintStyle: TextStyle(
-                  color: Colors.white
-                ),
+                hintText: "Enter in USD to convert in PKR",
+                hintStyle: TextStyle(color: Colors.black),
                 prefixIcon: Icon(Icons.monetization_on_outlined),
-                prefixIconColor: Colors.white,
+                prefixIconColor: Colors.black,
+                filled: true,
+                fillColor: Colors.white,
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(width: 2.0, style: BorderStyle.solid),
+                  borderRadius: BorderRadius.horizontal(
+                    right: Radius.circular(20)
+                  ),
+                ),
+                
               ),
-              
             ),
           ],
         ),
