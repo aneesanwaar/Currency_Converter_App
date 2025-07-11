@@ -5,6 +5,11 @@ class CurrencyConverter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final border = OutlineInputBorder(
+      borderSide: BorderSide(width: 2.0, style: BorderStyle.solid),
+      borderRadius: BorderRadius.all(Radius.circular(10)),
+    );
+
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 5, 160, 238),
       appBar: AppBar(
@@ -32,12 +37,11 @@ class CurrencyConverter extends StatelessWidget {
                 prefixIconColor: Colors.black,
                 filled: true,
                 fillColor: Colors.white,
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(width: 2.0, style: BorderStyle.solid),
-                  borderRadius: BorderRadius.all(Radius.circular(60))
-                  ),
+                focusedBorder: border,
+
+                enabledBorder: border,
+
                 ),
-                
               ),
             
           ],
