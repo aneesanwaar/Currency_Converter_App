@@ -34,8 +34,7 @@ class CurrencyConverter extends StatelessWidget {
                 fillColor: Colors.white,
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(width: 2.0, style: BorderStyle.solid),
-                  borderRadius: BorderRadius.horizontal(
-                    right: Radius.circular(20)
+                  borderRadius: BorderRadius.all(Radius.circular(60))
                   ),
                 ),
                 
