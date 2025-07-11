@@ -14,7 +14,7 @@ class CurrencyConverter extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: <Widget>[
             Text(
               "0",
               style: TextStyle(
@@ -39,7 +39,7 @@ class CurrencyConverter extends StatelessWidget {
                 ),
                 
               ),
-            ),
+            
           ],
         ),
       ),
